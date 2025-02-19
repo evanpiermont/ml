@@ -1,3 +1,14 @@
+from matplotlib import cm
+from mpl_toolkits.mplot3d import Axes3D
+import pandas as pd
+import numpy as np
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+from scipy.stats import multivariate_normal
+import math
+import numpy as np
+from scipy.optimize import minimize
+
 
 def misclassification_error(y):
     errors = sum(1 for label in y if label != y.mode()[0])  # Count misclassified instances
