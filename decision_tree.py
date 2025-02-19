@@ -161,7 +161,7 @@ def best_split(df, feature, target, loss_function):
     return best_threshold, best_loss
 
 
-def recursive_best_split(df, target, features, depth=0, max_depth=3, loss_function=mse_loss):
+def recursive_best_split(df, target, features, depth=0, max_depth=3, loss_function=entropy):
     """
     Recursively finds the best split for the dataset to create a decision tree.
     
